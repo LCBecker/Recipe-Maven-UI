@@ -10,4 +10,4 @@ To run the UI:
 4. grunt serve
 5. Navigate to localhost:9000/
 
-__Note:__ The UI will soon be added to the backend to be served.
+__Note:__ The UI will soon be added to the [backend](https://github.com/LCBecker/Recipe-Maven) to be served.
