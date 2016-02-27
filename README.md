@@ -1,5 +1,7 @@
 # Recipe-Maven-UI
 
+![Landing Page](https://raw.githubusercontent.com/LCBecker/Recipe-Maven-UI/master/app/images/LandingPage.png)
+
 To run the UI:
 
 1. Clone or save and unzip this repo.
