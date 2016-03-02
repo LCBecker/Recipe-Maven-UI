@@ -2,6 +2,12 @@
 
 ![Landing Page](https://raw.githubusercontent.com/LCBecker/Recipe-Maven-UI/master/app/images/LandingPage.png)
 
+![Add Recipe Page](https://raw.githubusercontent.com/LCBecker/Recipe-Maven-UI/master/app/images/AddRecipe.png)
+
+![Create List Page](https://raw.githubusercontent.com/LCBecker/Recipe-Maven-UI/master/app/images/CreateList.png)
+
+![Grocery List Page](https://raw.githubusercontent.com/LCBecker/Recipe-Maven-UI/master/app/images/ShoppingList.png)
+
 To run the UI:
 
 1. Clone or save and unzip this repo.

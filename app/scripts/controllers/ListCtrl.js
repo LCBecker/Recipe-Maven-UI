@@ -8,11 +8,10 @@
  * Controller of the recipeMavenApp
  */
 angular.module('recipeMavenApp')
-  .controller('MainCtrl', function ($location) {
+  .controller('ListCtrl', function (listService) {
     var vm = this;
-    vm.title = 'Recipe Maven';
-
-    vm.isActive = function (viewLocation) {
-      return viewLocation === $location.path();
-    };
+    vm.ingredients = listService.getList();
+    console.log(vm.ingredients);
+    console.log(Object.keys(vm.ingredients));
+    
   });

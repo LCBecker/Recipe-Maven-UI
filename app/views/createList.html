@@ -1,0 +1,18 @@
+<div class="container" id="createListContainer">
+  <div class="row" id="createListTitle">
+    <h1><span class="glyphicon glyphicon-check" id="createListIcon"></span> What're You Making? </h1>
+  </div>
+  <div class="row" id="selectRecipesForm">
+    <br>
+    <form novalidate>
+      <div ng-repeat="recipe in create.recipes">
+        <div class="checkbox">
+          <input class="recipeCheckBox" type="checkbox" ng-model="create.selected[recipe.name]">{{recipe.name}}<br>
+        </div>
+      </div>
+      <button class="btn btn-primary center-block" ng-click="create.createList()">
+        <span class="glyphicon glyphicon-shopping-cart"></span>
+        Make That Grocery List
+      </button>
+    </form>
+</div>

@@ -1,0 +1,25 @@
+listContainer {
+  padding-bottom: 20px;
+}
+
+#listIcon {
+  padding-right: 20px;
+}
+
+#listTitle {
+  background-color: #dd6600;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+#ingredientList {
+  background-color: #fff1e6;
+  padding: 20px;
+  border-right: 3px solid #dd6600;
+  border-left: 3px solid #dd6600;
+  border-bottom: 3px solid #dd6600;
+  margin-bottom: 25px;
+}

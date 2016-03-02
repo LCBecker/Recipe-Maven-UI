@@ -13,8 +13,13 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/addRecipe.css">
+    <link rel="stylesheet" href="styles/createList.css">
+    <link rel="stylesheet" href="styles/list.css">
+
 
     <!-- endbuild -->
   </head>
@@ -24,16 +29,16 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
+    <div class="header" ng-controller="MainCtrl as main">
+      <div class="navbar navbar-inverse" role="navigation">
         <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="#/">Recipe Maven</a>
           </div>
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/add">Add Recipe</a></li>
-              <li><a ng-href="#/">Create List</a></li>
+              <li ng-class="{active : main.isActive('/')}"><a href="#/">Home</a></li>
+              <li ng-class="{active : main.isActive('/add')}"><a href="#/add">Add Recipe</a></li>
+              <li ng-class="{active : main.isActive('/create')}"><a href="#/create">Create List</a></li>
             </ul>
         </div>
       </div>
@@ -43,10 +48,8 @@
     <div ng-view=""></div>
     <!-- </div> -->
 
-    <div class="footer">
-      <div class="container">
+    <div class="footer text-center">
         <p><span class="glyphicon glyphicon-heart"></span> Another Awesome Web Application by Lori Becker</p>
-      </div>
     </div>
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -66,6 +69,9 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/AddRecipeCtrl.js"></script>
+        <script src="scripts/controllers/CreateListCtrl.js"></script>
+        <script src="scripts/services/ListService.js"></script>
+        <script src="scripts/controllers/ListCtrl.js"></script>
         <!-- endbuild -->
 </body>
 </html>

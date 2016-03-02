@@ -1,0 +1,13 @@
+<div class="container" id="listContainer">
+  <div class="row" id="listTitle">
+    <h1><span class="glyphicon glyphicon-list-alt" id="listIcon"></span> Your Grocery List </h1>
+  </div>
+  <div class="row" id="ingredientList">
+    <br>
+    <ul>
+      <div ng-repeat="(name, amount) in list.ingredients">
+        <li> {{amount}} {{name}} </li>
+      </div>
+    </ul>
+    </div>
+  </div>

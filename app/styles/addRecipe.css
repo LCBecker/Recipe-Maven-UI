@@ -1,0 +1,33 @@
+#addRecipeContainer {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+#addRecipeIcon {
+  padding-right: 20px;
+}
+
+#addRecipeTitle {
+  background-color: #dd6600;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+
+}
+
+#addRecipeForm {
+  background-color: #fff1e6;
+  padding: 20px;
+  border-right: 3px solid #dd6600;
+  border-left: 3px solid #dd6600;
+  border-bottom: 3px solid #dd6600;
+}
+
+#recipeName {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}

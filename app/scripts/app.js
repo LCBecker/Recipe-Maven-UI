@@ -30,6 +30,16 @@ angular
         controller: 'AddRecipeCtrl',
         controllerAs: 'add'
       })
+      .when('/create', {
+        templateUrl: 'views/createList.html',
+        controller: 'CreateListCtrl',
+        controllerAs: 'create'
+      })
+      .when('/list', {
+        templateUrl: 'views/list.html',
+        controller: 'ListCtrl',
+        controllerAs: 'list'
+      })
       .otherwise({
         redirectTo: '/'
       });
